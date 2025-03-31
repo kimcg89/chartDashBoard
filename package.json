@@ -1,6 +1,7 @@
 {
   "name": "250318_maintobserve",
   "version": "1.0.0",
+  "homepage": "https://kimcg89.github.io/chartDashBoard",
   "scripts": {
     "deploy": "gh-pages -d ."
   },
