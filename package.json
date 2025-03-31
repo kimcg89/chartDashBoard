@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "homepage": "https://kimcg89.github.io/chartDashBoard",
   "scripts": {
-    "deploy": "gh-pages -d ."
+    "deploy": "gh-pages -d . && echo '👉 https://kimcg89.github.io/chartDashBoard'"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
