@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Container Layout */
+.container {
+  display: flex;
+  height: 100vh;
+  width: auto;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  left: 0;
+  width: 170px;
+  background-color: #0188ff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-shrink: 0; /* 사이즈가 줄어들지 않게 설정 */
+}
+
+.sidebar .logo {
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.sidebar .logo img {
+  width: 130px;
+  height: auto;
+}
+
+.sidebar .menu {
+  flex-grow: 1; /* 남은 공간을 모두 차지하도록 설정 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* 메뉴 항목들을 위에서부터 배치 */
+  align-items: center;
+}
+
+.sidebar .menuList {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.sidebar .menuList p {
+  text-align: center;
+  justify-content: center;
+  margin-right: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.menu a i,
+.sidebarBottom a i {
+  width: 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.sidebar .sidebarBottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.menuList,
+.sidebarBottom {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s; /* 호버 효과를 위한 전환 */
+  cursor: pointer;
+}
+
+.menuList:hover,
+.sidebarBottom:hover {
+  background-color: #f0f0f0;
+}
+
+.menuList.active,
+.sidebarBottom.active {
+  color: #1a73e8;
+  background-color: #e8f0fe;
+}
+
+/* mainBody */
+.mainBody {
+  display: flex;
+  flex-direction: column;
+  background-color: #fdfdfd;
+  width: calc(100% - 170px);
+  max-width: calc(1920px - 170px);
+  height: 100%;
+  margin-left: 170px;
+}
+
+/* header */
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80px;
+}
+
+.header .navibar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.navibar div {
+  display: flex;
+  width: 140px;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.452);
+  margin: 0 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.filter-btn {
+  cursor: pointer;
+  background-color: #ddd;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.filter-btn:hover {
+  background-color: #ccc;
+}
+.filter-btn.active {
+  background-color: #1a73e8;
+  color: white;
+}
+
+
+
+/* mainContent를 4x2 그리드 레이아웃으로 설정 */
+.chart-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 기본 4열 */
+  grid-template-rows: auto;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 100px);
+  margin-bottom: 20px;
+}
+
+
+/* 캔버스 크기 */
+.chart-container canvas {
+  width: 100%;
+  max-width: 350px;
+  height: 200px;
+  display: flex;
+}
+
+/* 버튼 컨테이너 */
+.chart-container div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.chart-container button {
+  padding: 2px 3px;
+  margin: 2px 0;
+  font-size: 10px;
+  cursor: pointer;
+}
