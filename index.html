@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+
+    <title>ChartDashBoard</title>
+  </head>
+  <body>
+    <!-- container -->
+    <div class="container">
+      <!-- sidebar -->
+      <div class="sidebar">
+        <!-- logo -->
+        <div class="logo">
+          <img src="Image/MESA-logo-white.png" alt="" />
+        </div>
+
+        <!-- menu -->
+        <div class="menu">
+          <div class="menuList active">
+            <p>DashBoard</p>
+            <a href="#" id="Dashboard"
+              ><i class="fa-solid fa-chart-simple"></i
+            ></a>
+          </div>
+          <div class="menuList">
+            <p>DashBoard2</p>
+            <a href="#" id="Dashboard2"
+              ><i class="fa-solid fa-chart-simple"></i
+            ></a>
+          </div>
+          <div class="menuList">
+            <p>DashBoard3</p>
+            <a href="#" id="Dashboard3"
+              ><i class="fa-solid fa-chart-simple"></i
+            ></a>
+          </div>
+          <div class="menuList">
+            <p>DashBoard4</p>
+            <a href="#" id="Dashboard4"
+              ><i class="fa-solid fa-chart-simple"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- sidebarBottom -->
+        <div class="sidebarBottom">
+          <p>Logout</p>
+          <a href="#" id="Logout"
+            ><i class="fa-solid fa-right-from-bracket"></i
+          ></a>
+        </div>
+
+        <!-- sidebar END -->
+      </div>
+
+      <!-- mainBody -->
+      <div class="mainBody">
+        <!-- header -->
+        <div class="header">
+          <!-- navibar -->
+          <div class="navibar">
+            <div class="filter-btn" data-type="bar">Bar Chart</div>
+            <div class="filter-btn" data-type="line">Line Chart</div>
+            <div class="filter-btn" data-type="doughnut">Doughnut Chart</div>
+            <div class="filter-btn" data-type="radar">Radar Chart</div>
+
+            <!-- navibar END -->
+          </div>
+
+          <!-- header END -->
+        </div>
+
+        <div class="mainContent">
+          <div class="chart-container">
+            <canvas id="myChart1"></canvas>
+          </div>
+          <div class="chart-container">
+            <canvas id="myChart2"></canvas>
+          </div>
+          <div class="chart-container">
+            <canvas id="myChart3"></canvas>
+          </div>
+          <div class="chart-container">
+            <canvas id="myChart4"></canvas>
+          </div>
+          <div class="chart-container">
+            <canvas id="myChart5"></canvas>
+          </div>
+          <div class="chart-container">
+            <canvas id="myChart6"></canvas>
+          </div>
+          <div class="chart-container">
+            <canvas id="myChart7"></canvas>
+          </div>
+          <div class="chart-container">
+            <canvas id="myChart8"></canvas>
+          </div>
+        </div>
+        
+
+        <!-- mainBody END -->
+      </div>
+
+      <!-- END -->
+    </div>
+  </body>
+  <script src="script.js" defer></script>
+</html>
