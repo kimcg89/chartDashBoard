@@ -171,7 +171,7 @@
 .mainContent {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 기본 4열 */
-  grid-template-rows:  1fr; /* 새 행이 생길 때마다 동일한 높이로 */
+  /* grid-template-rows:  1fr; 새 행이 생길 때마다 동일한 높이로 */
   /* gap: 10px; */
   justify-items: center;
   align-items: center; /* 차트 컨테이너가 행 전체 높이 차지하도록 */
