@@ -150,7 +150,7 @@ const progressiveLineChart_config = {
     ]
   },
   options: {
-    progressiveLineChart_animation,
+    animation: progressiveLineChart_animation,
     interaction: {
       intersect: false
     },
