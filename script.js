@@ -80,7 +80,7 @@ const delayChart_ctx = document.getElementById("myChart2").getContext("2d");
 new Chart(delayChart_ctx, delayChart_config);
 
 // 3. progressiveLineChart ###############################
-const progressiveLineChart_totalDuration = 5000;
+const progressiveLineChart_totalDuration = 4000;
 const progressiveLineChart_delayBetweenPoints = progressiveLineChart_totalDuration / 1000; // data 길이에 맞춘 딜레이 계산
 
 const progressiveLineChart_previousY = (ctx) => 
